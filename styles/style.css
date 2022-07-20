@@ -1,0 +1,63 @@
+
+body{
+    width: 1600px;
+    height: 1908px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header styles */
+header{
+    background-color: rgba(22, 22, 22, 1);
+    border-radius: 30px;
+    height: 646px;
+    width : 1321px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+.top-banner{
+    display: flex;
+}
+.banner{
+    height: 424px;
+    width : 531px;
+    margin-top: 111px;
+    margin-bottom: 111px;
+    margin-left: 106px;
+    color:rgba(255, 255, 255, 1)
+}
+.banner h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.banner p{
+    font-size: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 30px;
+}
+.banner a{
+    background: red;
+    text-decoration: none;
+    color: white;
+    width: 187px;
+    height: 56px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:500;
+}
+.banner-image{
+    padding-left: 20px;
+    height: 613px;
+    width: 581px;
+}
+
+/* upcoming matches */
+.navigation{
+    width: 312px;
+    height: 312px;
+    background-color: rgba(22, 22, 22, 1);
+    border-radius: 10px;
+}
