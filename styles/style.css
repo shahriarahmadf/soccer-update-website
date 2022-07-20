@@ -61,8 +61,8 @@ header{
     width: 581px;
 }
 
-/* upcoming matches */
-.upcoming-matches{
+/* main content common */
+.main-content{
     gap: 24px;
     display: flex;
 }
@@ -99,6 +99,9 @@ header{
     background-color: rgba(221, 0, 0, 1);
     color: white;
 }
+
+/* upcoming matches */
+
 .matches{
     width: calc(100%-312px);
     display: grid;
