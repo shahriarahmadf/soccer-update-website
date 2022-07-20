@@ -2,7 +2,9 @@
 body{
     width: 1600px;
     height: 1908px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -47,7 +49,11 @@ header{
     border-radius: 5px;
     font-size: 20px;
     font-weight:500;
+    text-align: center;
+    padding: 16px 25px 16px 25px;
+    gap: 10px;
 }
+
 .banner-image{
     padding-left: 20px;
     height: 613px;
@@ -55,9 +61,90 @@ header{
 }
 
 /* upcoming matches */
+.upcoming-matches{
+    gap: 24px;
+    display: flex;
+}
 .navigation{
     width: 312px;
     height: 312px;
     background-color: rgba(22, 22, 22, 1);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-tab{
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: normal;
+    color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.nav-tab a{
+    text-decoration: none;
+    padding-top: 17px;
+    color: inherit;
+}
+.current-tab{
+    background-color: rgba(221, 0, 0, 1);
+    color: white;
+}
+.matches{
+    width: calc(100%-312px);
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3,1fr);
+}
+.match{
+    height: 188px;
+    width: 312px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    padding-top: 53px;
+}
+.match h2{
+    font-size: 20px;
+    font-weight:600;
+    color: rgba(22, 22, 22, 1);
+    margin-block-start: 20;
+    margin-block-end: 0;
+}    
+.match h3{
+    font-size: 16px;
+    font-weight:bold;
+    color: rgba(22, 22, 22, 1);
+}   
+.match p{
+    font-size: 16px;
+    font-weight:normal;
+    columns: #4D4D4D;
+    margin-block-start: 10;
+    margin-block-end: 0;
+}         
+.vs{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+.vs-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* footer styles */
+footer{
+    background-color: rgba(22, 22, 22, 1);
+    width: 1600px;
+    height: 444px;
+    margin-top: 130px;
 }
