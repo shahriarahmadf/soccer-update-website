@@ -1,5 +1,3 @@
-
-
 body{
     margin: 0;
     height: 1908px;
@@ -8,7 +6,6 @@ body{
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
-
 /* header styles */
 header{
     background-color: rgba(22, 22, 22, 1);
@@ -54,13 +51,11 @@ header{
     padding: 16px 25px 16px 25px;
     gap: 10px;
 }
-
 .banner-image{
     padding-left: 20px;
     height: 613px;
     width: 581px;
 }
-
 /* main content common */
 .main-content{
     gap: 24px;
@@ -99,9 +94,70 @@ header{
     background-color: rgba(221, 0, 0, 1);
     color: white;
 }
-
-/* upcoming matches */
-
+/* transfers */
+.transfers{
+    width: calc(100%-312px);
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3,1fr);
+}
+.transfer{
+    height: 362px;
+    width: 312px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    display: flex;
+    flex-direction: column;
+}
+.transfer img{
+    height: 175px;
+    width: 312px;
+}
+.transfer-box{
+    height: 32px;
+    width: 100px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;    
+}
+.transfer-box p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+.transfer h2{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 20px;
+}
+.transfer-info{
+    display: flex;
+    gap: 30px;
+}
+.transfer-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.transfer-details img{
+    padding-left: 20px;
+    width: 24px;
+    height: 24px;
+}
+.transfer-details p{
+    padding-left: 10px;
+    color:rgba(22, 22, 22, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+}
+/* matches */
 .matches{
     width: calc(100%-312px);
     display: grid;
@@ -144,14 +200,12 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
 /* footer styles */
 footer{
     background-color: rgba(22, 22, 22, 1);
     width: 100%;
     height: 444px;
-    margin-top: 130px;
-    
+    margin-top: 130px; 
 }
 .footer-title{
     display: flex;
@@ -179,10 +233,8 @@ footer hr{
     margin-block-start: 0;
     margin-block-end: 0;
     margin-top: 50px;
-
     display: flex;
     justify-content: space-evenly;
-    
 .footer-banner a{
     text-decoration: none;
 }
