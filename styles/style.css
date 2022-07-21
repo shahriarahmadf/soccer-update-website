@@ -1,3 +1,4 @@
+/* body styles */
 body{
     width: 100%;
     margin: 0;
@@ -50,16 +51,10 @@ header{
     gap: 10px;
 }
 .banner-image{
-    padding-left: 20px;
+    padding-left: 10px;
     height: 613px;
     width: 581px;
 }
-
-/* header animation
-@keyframes sliding{
-    .banner a:hover{
-
-} */
 
 /* main content common */
 .main-content{
