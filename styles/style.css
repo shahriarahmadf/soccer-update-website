@@ -243,6 +243,9 @@ footer hr{
 .footer-banner a{
     text-decoration: none;
 }
+.footer-second-line{
+    display: none;
+}
 
 /* media query for mobile*/
 
@@ -330,4 +333,101 @@ footer hr{
         height: auto;
 
     }
+}
+
+/* media query for tablet*/
+
+@media screen and (min-width:577px) and (max-width: 992px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .top-banner{
+        width: 734px;
+        margin-bottom: 24px;
+    }
+    .banner{
+        margin-top: 25px;
+        margin-left: 38px;
+        margin-right: 38px;
+        margin-bottom: 21px;
+        width: 80%;
+        height: 200px;
+    }
+    .banner h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .banner p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .banner-image{
+        height: 322px;
+        width: 375px;
+        padding-left: 0px;
+    }
+    .banner-image img{
+        padding-top: 20px;
+        padding-left: 0px;
+        width: 233px;
+    }
+    /* main content */
+    .main-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        gap: 16px;
+        height: auto;
+        width: 734px;
+    }
+    .nav-tab{
+        margin-top: 0px;
+        border: 1px solid #E8E8E8;
+    }
+    /* transfers */
+    .transfers{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* matches */
+    .matches{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* footer */
+    footer{
+        margin-top:24px;
+        height: auto;
+    }
+    .footer-title h1{
+        padding-top: 24px;
+    }
+    footer hr{
+        margin-top: 24px;
+        background-color:rgba(255, 255, 255, 0.1);
+        width: 734px;
+    }
+    .footer-banner{
+        margin-top: 0px;
+        align-items: center;
+        height: auto;
+    }
+    .tablet-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .tablet{
+        display: none;
+    }
+    
 }
