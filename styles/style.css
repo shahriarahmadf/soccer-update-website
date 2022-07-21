@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    height: 1908px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,8 +9,6 @@ body{
 header{
     background-color: rgba(22, 22, 22, 1);
     border-radius: 30px;
-    height: 646px;
-    width : 1321px;
     margin-top: 50px;
     margin-bottom: 130px;
 }
@@ -56,6 +53,13 @@ header{
     height: 613px;
     width: 581px;
 }
+
+/* header animation
+@keyframes sliding{
+    .banner a:hover{
+
+} */
+
 /* main content common */
 .main-content{
     gap: 24px;
@@ -235,6 +239,95 @@ footer hr{
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
+}
 .footer-banner a{
     text-decoration: none;
+}
+
+/* media query for mobile*/
+
+@media screen and (max-width: 576px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .top-banner{
+        width: 375px;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    .banner{
+        margin-top: 25px;
+        margin-left: 38px;
+        margin-right: 38px;
+        margin-bottom: 21px;
+        width: 80%;
+        height: 200px;
+    }
+    .banner h1{
+        font-size: 22px;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .banner-image{
+        height: 322px;
+        width: 375px;
+        padding-left: 0px;
+    }
+    .banner-image img{
+        padding-left: 63px;
+        width: 233px;
+    }
+    /* main content */
+    .main-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation{
+        background-color: white;
+        gap: 16px;
+        height: auto;
+    }
+    .nav-tab{
+        margin-top: 0px;
+        border: 1px solid #E8E8E8;
+    }
+    /* transfers */
+    .transfers{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* matches */
+    .matches{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* footer */
+    footer{
+        margin-top:24px;
+        height: auto;
+    }
+    .footer-title h1{
+        padding-top: 24px;
+    }
+    footer hr{
+        margin-top: 24px;
+        background-color:rgba(255, 255, 255, 0.1);
+        width: 335px;
+    }
+    .footer-banner{
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
 }
